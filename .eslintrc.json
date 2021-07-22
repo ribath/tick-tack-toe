@@ -1,0 +1,42 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "google"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "react/forbid-prop-types": [0, { "forbid": ["any"] }],
+        "react/prop-types": 0,
+        "comma-dangle": ["error", "never"],
+        "object-curly-newline": "off",
+        "react/destructuring-assignment": "off",
+        "react/jsx-indent": "off",
+        "react/jsx-indent-props": "off",
+        "react/react-in-jsx-scope": "off",
+        "import/prefer-default-export": "off",
+        "no-else-return": "off",
+        "no-param-reassign": "off",
+        "import/no-named-as-default": "off",
+        "no-use-before-define": "off",
+        "react/style-prop-object": "off",
+        "import/extensions": "off",
+        "import/no-unresolved": "off",
+        "react/jsx-filename-extension": "off",
+        "require-jsdoc": "off"
+    }
+}
