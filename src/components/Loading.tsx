@@ -1,5 +1,6 @@
 import ReactLoading from 'react-loading';
 import {LoadingContainer} from './styled/Containers';
+import {Title} from './styled/Elements';
 
 function Loading() {
   return (
@@ -10,7 +11,7 @@ function Loading() {
         height={600}
         width={300}
       />
-      Loading ...
+      <Title>Loading ...</Title>
     </LoadingContainer>
   );
 }
