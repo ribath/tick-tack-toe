@@ -29,13 +29,11 @@ export const mainSlice = createSlice({
       state.winner = action.payload;
     },
     persistIfNotFinished: (state) => {
-      if (state.winner !== '') {
+      if (state.winner !== '' || state.strike >= 9) {
         state.boxes = [0, 0, 0, 0, 0, 0, 0, 0, 0];
         state.lastPos = -1;
         state.strike = 0;
         state.winner = '';
-      } else {
-        state = state;
       }
     }
   }
